@@ -1,0 +1,223 @@
+@media all and (min-width:  300px) and (max-width: 900px) {
+
+.banniere {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	width: 30%;
+	height: 30%;
+	padding-left: 0;
+	padding-top: 10px;
+	}
+
+/* Le menu */
+
+nav.menu {
+	width: 100%;
+}
+
+nav.menu ul {
+	padding-left: 0;
+}
+
+nav.menu li {
+	padding-bottom: 10px;
+	border-bottom: 3px solid #F2F2F2;
+	width: 50%;
+	text-align: center;
+	margin: 0;
+}
+
+nav.menu li a:hover {
+	border-top: none;
+}
+
+nav.menu li:hover {
+	border-bottom: 3px solid #0065FC;
+	padding-top: 20px;
+}
+
+
+/* Le formulaire de recherche */
+
+form {
+	width: 300px;
+}
+
+#search {
+	display: flex;
+	text-align: center;
+	padding-left: 5px;
+}
+
+.rechercher {
+	display: none;
+}
+
+button {
+	border-radius: 10px;
+	width: 40px;
+}
+
+/* Les filtres */
+
+nav h3 {
+	margin-bottom: -2px;
+}
+
+nav.filtres {
+	flex-wrap: wrap;
+}
+
+nav.filtres ul {
+	flex-wrap: wrap;
+	padding-left: 0;
+}
+
+nav.filtres li {
+	margin-bottom: 10px;
+}
+
+#message_information i {
+	width: 34px;
+	height: 20px;
+	margin-right: 5px;
+	padding-top: 3px;
+	margin-top: 10px;
+}
+
+/* Partie Hebergement */
+
+.main {
+	flex-direction: column-reverse;
+}
+
+#hebergement aside {
+	width: 100%;
+	border-radius: 0;
+}
+
+#entete_populaire {
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+
+#entete_populaire h2 {
+	padding-left: 12px;
+}
+
+#entete_populaire i {
+	margin-right: 20px;
+}
+
+aside figure {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+aside a figure figcaption {
+	padding-left: 10px;
+}
+
+#photo_hotel_tout_bleu_et_blanc {
+	width: 140px;
+	height: 114px;
+}
+
+#place_hebergement {
+	background-color: white;
+	border-radius: 0;
+	width: 100%;
+}
+
+article h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-left: 12px;
+}
+
+a.cart {
+	padding-right: 0;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#encarts figure {
+	width: 330px;
+	height: 200px;
+	margin-right: 0;
+	margin-left: 0;
+	border: 3px solid white;
+}
+
+article img {
+	width: 100%;
+	border: none;
+}
+
+article figcaption {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	padding-top: 10px;
+}
+
+#afficher_plus {
+	margin-top: 20px;
+	padding-left: 0;
+	padding-bottom: 0;
+}
+
+/* Activités */
+
+#activite h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+#vieux_port, #parc_national_des_calanques,
+#fort_de_pomegues, #ile_du_frioul,
+#notre_dame_de_la_garde, #parc_longchamp {
+	height: 125px;
+	width: 335px;
+}
+
+#images_activite {
+	flex-direction: column;
+}
+
+#images_activite figure {
+	margin-right: 0;
+	margin-left: 0;
+	width: 335px;
+}
+
+#img_activite1,
+#img_activite2_3,
+#img_activite5_6 {
+	margin: 0;
+}
+
+
+/* Footer */
+
+footer {
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+footer .bloc_footer {
+	width: 100%;
+}
+
+footer ul {
+	margin-bottom: 0;
+}
+
+}

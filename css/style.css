@@ -1,0 +1,465 @@
+body {
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	max-width: 1440px;
+	margin: auto;
+}
+
+h1, h2, h3, h4, p {
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+h1, h2 {
+	font-weight: bold;
+}
+
+
+/* Header */
+
+.banniere {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 10%;
+	height: 10%;
+	padding-left: 2%;
+	padding-top: 8px;
+}
+
+.bloc_page {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Le menu Hebergement et Activités */
+
+nav.menu ul {
+	list-style-type: none;
+	display: flex;
+}
+
+nav.menu li {
+	padding: 20px;
+}
+
+nav.menu a {
+	color: black;
+	text-decoration: none;
+}
+
+nav.menu a:hover {
+	color: #0065FC;
+	border-top: 3px solid #0065FC;
+	padding-top: 20px;
+}
+
+/* Le formulaire de recherche */
+
+form {
+	display: flex;
+	border: 1px solid #F2F2F2;
+	border-radius: 10px;
+	width: 370px;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#position {
+	border: 1px solid #F2F2F2;
+	border-radius: 9px 0 0 9px;
+	background-color: #F2F2F2;
+	text-align: center;
+	padding-top: 10px;
+	width: 40px;
+	height: 28px;
+}
+
+#search {
+	display: none;
+}
+
+input {
+	border: none;
+	width: 220px;
+	height: 38px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+input::placeholder {
+	color: black;
+}
+
+button {
+	border: none;
+	border-radius: 0 10px 10px 0;
+	background-color: #0065FC;
+	color: white;
+	width: 110px;
+	height: 40px;
+	font-weight: bold;
+}
+
+
+/* Les filtres */
+
+nav.filtres {
+	display: flex;
+	flex-direction: row;
+}
+
+nav h3 {
+	padding-top: 0.5%;
+}
+
+nav.filtres ul {
+	list-style-type: none;
+	display: flex;
+	font-weight: bold;
+}
+
+nav.filtres li {
+	display: flex;
+	border: 2px solid #F2F2F2;
+	border-radius: 25px 25px 25px 25px; 
+	padding-right: 10px;
+	margin-right: 20px;
+}
+
+nav.filtres a {
+	color: black;
+	text-decoration: none;
+}
+
+nav.filtres a i {
+	color: #0065FC;
+	border: 2px solid #DEEBFF;
+	border-radius: 50%;
+	background-color: #DEEBFF;
+	width: 40px;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+nav.filtres a:hover i {
+	color: white;
+	background-color: #0065FC;
+	border: 2px solid #0065FC;
+}
+
+nav.filtres a:hover {
+	color: #0065FC;
+}
+
+/* Message d'information */
+
+#message_information {
+	display: flex;
+	flex-direction: row;
+}
+
+#message_information i {
+	color: #0065FC;
+	border: 1.5px solid #F2F2F2;
+	border-radius: 50%;
+	background-color: white;
+	width: 30px;
+	height: 25px;
+	text-align: center;
+	padding-top: 5px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#message_information p {
+	padding-top: 0;
+}
+
+
+
+/* Partie Hebergement avec les images */
+
+/*
+#hebergement {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+*/
+
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Fond de la partie hébergement */
+#place_hebergement {
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 65%;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+}
+
+article img {
+	object-fit: cover;
+	/*
+	width: 200px;
+	height: 120px;
+	*/
+}
+
+article h2, #afficher_plus {
+	margin-bottom: 20px;
+	padding-left: 40px;
+}
+
+#hebergement a {
+	text-decoration: none;
+	color: black;
+}
+
+#hebergement strong {
+	font-weight: bold;
+}
+
+#encarts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 50px;
+}
+
+a.cart {
+	width: 226px;
+    height: 180px;
+    padding-right: 50px;
+}
+
+#encarts figure {
+	width: 226px;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.cart {
+	margin-bottom: 30px;
+}
+
+article img {
+	width: 224px;
+    height: 110px;
+    border: 3px solid white;
+    border-radius: 20px 20px 0 0;
+}
+
+article figcaption {
+	width: 214px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 0 0 20px 20px;
+    color: black;
+    margin-top: -6px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+article figure figcaption span i {
+	color: #0065FC;
+	padding-top: 8px;
+}
+
+article figure figcaption i {
+	color: #F2F2F2;
+	padding-top: 8px;
+}
+
+#afficher_plus {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
+}
+
+/* Partie les plus populaires - Le Aside */
+
+#hebergement aside {
+	width: 32%;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+}
+
+
+#entete_populaire {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+
+/* Etoile de populaire */
+#entete_populaire i {
+	margin-right: 40px;
+}
+
+#entete_populaire h2 {
+	padding-left: 35px;
+}
+
+#images_populaires {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+aside img {
+	object-fit: cover;
+	width: 120px;
+	height: 114px;
+	border-radius: 20px 0 0 20px;
+}
+
+aside figure {
+	background-color: white;
+	border: 5px solid white;
+	border-radius: 20px;
+	box-shadow: 0 0 10px gray;
+}
+
+aside a figure {
+	display: flex;
+}
+
+aside figcaption {
+	padding-top: 10px;
+}
+
+aside figure figcaption span i {
+	color: #0065FC;
+}
+
+aside figure figcaption i {
+	color: #F2F2F2;
+}
+
+aside a figure figcaption {
+	padding-left: 20px;
+	margin-right: 20px;
+}
+
+aside figure i {
+	padding-top: 25px;
+}
+
+/* Partie Activités */ 
+
+#vieux_port, #parc_national_des_calanques {
+	object-fit: cover;
+	width: 286px;
+	height: 400px;
+}
+
+#fort_de_pomegues {
+	object-fit: cover;
+	width: 286px;
+	height: 210px;
+}
+
+#ile_du_frioul {
+	object-fit: cover;
+	width: 286px;
+	height: 100px;
+}
+
+#notre_dame_de_la_garde {
+	object-fit: cover;
+	width: 286px;
+	height: 130px;
+}
+
+#parc_longchamp {
+	object-fit: cover;
+	width: 286px;
+	height: 180px;
+}
+
+#images_activite {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#img_activite1 {
+	margin-left: -36px;
+}
+
+#img_activite5_6 {
+	margin-right: 36px;
+}
+
+#img_activite2_3, #img_activite5_6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: -100px;
+}
+
+#images_activite img {
+	border-radius: 20px 20px 0 0;
+}
+
+#images_activite a {
+	width: 286px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+#images_activite figure {
+	background-color: white;
+	box-shadow: 0px 0px 5px gray;
+	width: 286px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+}
+
+#images_activite figcaption {
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+/* Footer */
+
+footer {
+	padding-top: 10px;
+	margin-top: 25px;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer .bloc_footer {
+	width: 30%;
+}
+
+footer ul {
+	list-style-type: none;
+	padding-left: 0;
+	padding-bottom: 20px;
+}
+
+footer ul li {
+	padding: 5px;
+	padding-left: 0;
+}
